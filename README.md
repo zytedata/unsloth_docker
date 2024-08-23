@@ -1,4 +1,6 @@
-A working `Dockerfile` that has unsloth with all the other dependencies.
+# unsloth_docker
+
+A minimal working `Dockerfile` that has unsloth with all the other dependencies.
 
 ### How to use
 
@@ -11,11 +13,11 @@ docker build -t unsloth .
 Run using GPUs:
 
 ```bash
-docker run --gpus all -it unsloth ipython
+docker run --gpus all -it unsloth
 ```
 
 
-Import and use stuff to see it's working. Running:
+Import and to see if it's working. Run:
 
 ```python
 from unsloth import FastLanguageModel
@@ -28,7 +30,7 @@ model, tokenizer = FastLanguageModel.from_pretrained(
 )
 ```
 
-Shows everythin's fine:
+It shows that everything is fine (import ok and FA2 = True):
 
 
 ```
